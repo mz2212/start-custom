@@ -8,15 +8,9 @@
 	</head>
 	<body>
 		<main>
-		<form id="search">
-			<input id="searchText" type="text" autocomplete="off" autofocus />
+		<form id="search" action="https://google.com/search">
+			<input id="searchText" type="text" name="q" autocomplete="off" autofocus />
 		</form>
-		<script type="text/javascript">
-			document.getElementById('search').onsubmit = function() {
-				window.location = "https://google.com/search?q=" + document.getElementById('searchText').value;
-				return false;
-			}
-		</script>
 		<hr />
 		<ul><li><a href="https://google.com" class="front">google</a></li></ul>
 		<ul>
@@ -28,6 +22,11 @@
 		<ul>
 			<li><a href="https://www.reddit.com/r/softwaregore">softwaregore</a></li>
 			<li><a href="https://www.reddit.com/r/mlplounge">mlplounge</a></li>
+		</ul>
+		<br />
+		<ul><li><div class="front">school</div></li></ul>
+		<ul>
+			<li><a href="https://netacad.com">netacad</a></li>
 		</ul>
 		</main>
 	</body>
